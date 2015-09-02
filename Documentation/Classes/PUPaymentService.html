@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>PUPaymentService Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">PayU SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">PayU</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/dataSource">dataSource</option>
+		
+		<option value="//api/name/delegate">delegate</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/clearUserContext">- clearUserContext</option>
+		
+		<option value="//api/name/handleOpenURL:">- handleOpenURL:</option>
+		
+		<option value="//api/name/paymentMethodViewControllerWithDelegate:">- paymentMethodViewControllerWithDelegate:</option>
+		
+		<option value="//api/name/paymentMethodWidgetWithFrame:">- paymentMethodWidgetWithFrame:</option>
+		
+		<option value="//api/name/retrieveSelectedPaymentMethodWithCompletionHandler:">- retrieveSelectedPaymentMethodWithCompletionHandler:</option>
+		
+		<option value="//api/name/submitPaymentRequest:completionHandler:">- submitPaymentRequest:completionHandler:</option>
+		
+		<option value="//api/name/submitPaymentRequest:completionHandler:controllerPresentationBlock:">- submitPaymentRequest:completionHandler:controllerPresentationBlock:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">PUPaymentService Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>PUPaymentService.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>PUPaymentService class manages all aspects of adding and selecting payment methods and performing payment.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/dataSource" title="dataSource"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dataSource">&nbsp;&nbsp;dataSource</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Authorization data source</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;PUAuthorizationDataSource&gt; dataSource</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PUPaymentService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>PUPaymentService delegate</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;PUPaymentServiceDelegate&gt; delegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PUPaymentService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Showing selected payment method" name="task_Showing selected payment method"></a>
+						<h2 class="task-title">Showing selected payment method</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/paymentMethodWidgetWithFrame:" title="paymentMethodWidgetWithFrame:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/paymentMethodWidgetWithFrame:">&ndash;&nbsp;paymentMethodWidgetWithFrame:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Method for retrieving payment method widget. This widget is a UIView subclass that shows currently selected payment method.
+State and appearance of the widget is controlled internally the only responsibility of the client is to properly show widget on screen.
+When user interacts with the widget the Payment Service will inform its <a href="#//api/name/delegate">delegate</a> that Payment Methods View Controller should be presented on screen.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (UIView *)paymentMethodWidgetWithFrame:(CGRect)<em>frame</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>frame</code></th>
+						<td><p>Proposed frame for widget.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> Widget will reposition its controls to reflect width changes but height is fixed to 50.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PUPaymentService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Submitting payment" name="task_Submitting payment"></a>
+						<h2 class="task-title">Submitting payment</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/submitPaymentRequest:completionHandler:" title="submitPaymentRequest:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/submitPaymentRequest:completionHandler:">&ndash;&nbsp;submitPaymentRequest:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Method for submitting payment.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)submitPaymentRequest:(PUPaymentRequest *)<em>paymentRequest</em> completionHandler:(void ( ^ ) ( PUPaymentRequestStatus status , NSError *error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>paymentRequest</code></th>
+						<td><p><a href="../Classes/PUPaymentRequest.html">PUPaymentRequest</a> object containing transaction data.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>Code block that will be invoked when submitting is finished, or brake at some point with error.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PUPaymentService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Handling changing of user in merchant application" name="task_Handling changing of user in merchant application"></a>
+						<h2 class="task-title">Handling changing of user in merchant application</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/clearUserContext" title="clearUserContext"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clearUserContext">&ndash;&nbsp;clearUserContext</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Cleans up all data related to current user context.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)clearUserContext</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="note"><p><strong>Note:</strong> Sample usage scenarios: logging out user for which PUPaymentService instance is currently used,
+creating fresh instance of PUPaymentService for user different than last time.</p></div><div class="warning"><p><strong>Warning:</strong> If You are not using widget you must remember to refresh already presented selected payment method of logged out user!</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PUPaymentService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Handle response from external application" name="task_Handle response from external application"></a>
+						<h2 class="task-title">Handle response from external application</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/handleOpenURL:" title="handleOpenURL:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/handleOpenURL:">&ndash;&nbsp;handleOpenURL:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method enables forwarding of callback URL to SDK and is required to properly handle payment authorization with external applications.
+Should be called in UIApplicationDelegate in method - (BOOL)application:(UIApplication <em>)application openURL:(NSURL </em>)url sourceApplication:(NSString *)sourceApplication</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)handleOpenURL:(NSURL *)<em>callback</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>URL which application was asked to open.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PUPaymentService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/submitPaymentRequest:completionHandler:controllerPresentationBlock:" title="submitPaymentRequest:completionHandler:controllerPresentationBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/submitPaymentRequest:completionHandler:controllerPresentationBlock:">&ndash;&nbsp;submitPaymentRequest:completionHandler:controllerPresentationBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Method for submitting payment.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)submitPaymentRequest:(PUPaymentRequest *)<em>paymentRequest</em> completionHandler:(void ( ^ ) ( PUPaymentRequestStatus status , NSError *error ))<em>completionHandler</em> controllerPresentationBlock:(void ( ^ ) ( UIViewController *viewController , PUPresentationStyle presentationStyle ))<em>controllerPresentationBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>paymentRequest</code></th>
+						<td><p><a href="../Classes/PUPaymentRequest.html">PUPaymentRequest</a> object containing transaction data.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>Code block that will be invoked when submitting is finished, or brake at some point with error.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>controllerPresentationBlock</code></th>
+						<td><p>Code block that will be invoked when it is necessary to display some additional view
+controller to finish payment process, f.e. in order to provide additional authorization infomation (CVV, 3DS) or log in to bank system.
+This code block provides UIViewController subclass that <strong>must</strong> be shown on the screen in order to properly finish payment process.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> controllerPresentationBlock code block may be called several times.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PUPaymentService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Retrieving selected payment method" name="task_Retrieving selected payment method"></a>
+						<h2 class="task-title">Retrieving selected payment method</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/retrieveSelectedPaymentMethodWithCompletionHandler:" title="retrieveSelectedPaymentMethodWithCompletionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/retrieveSelectedPaymentMethodWithCompletionHandler:">&ndash;&nbsp;retrieveSelectedPaymentMethodWithCompletionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Method for retrieving selected payment method. (<b class="deprecated">Deprecated:</b><span class="deprecated"> Use PaymentMethodWidget to present selected payment method instead</span>)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)retrieveSelectedPaymentMethodWithCompletionHandler:(void ( ^ ) ( PUPaymentMethodDescription *paymentMethod , NSError *error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>Code block that will be invoked when retrieving is finished</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PUPaymentService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Providing payment methods list UIViewController subclass" name="task_Providing payment methods list UIViewController subclass"></a>
+						<h2 class="task-title">Providing payment methods list UIViewController subclass</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/paymentMethodViewControllerWithDelegate:" title="paymentMethodViewControllerWithDelegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/paymentMethodViewControllerWithDelegate:">&ndash;&nbsp;paymentMethodViewControllerWithDelegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Method for providing UIViewController subclass containing payment methods list. Provided instance should be presented on the screen. (<b class="deprecated">Deprecated:</b><span class="deprecated"> Use widget and implement paymentServiceDidRequestPresentingPaymentMethodsViewController instead.</span>)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (UIViewController *)paymentMethodViewControllerWithDelegate:(id&lt;PUPaymentMethodViewControllerDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>Delegate that will be informed about payment method selection.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>UIViewController subclass for showing payment methods list.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> Given controller <strong>can&rsquo;t</strong> be pushed onto UIViewController stack.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PUPaymentService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 PayU. All rights reserved. Updated: 2015-08-10</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
