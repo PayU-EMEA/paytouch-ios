@@ -44,7 +44,6 @@ typedef NS_ENUM(NSInteger, PUPresentationStyle) {
  */
 - (void)paymentServiceDidRequestPresentingViewController:(UIViewController *)viewController;
 
-@optional
 /**
  *  This method is invoked when Payment Service detect the need of presenting payment methods list to the user.
  *  When this call is received Payment Service should be used to retrieve Payment Methods View Controller.
@@ -53,7 +52,20 @@ typedef NS_ENUM(NSInteger, PUPresentationStyle) {
  *  @param paymentService Payment Service instance.
  *  @deprecated Use paymentServiceDidRequestPresentingPaymentMethodsViewController instead
  */
+
 - (void)paymentServiceDidRequestPresentingPaymentMethodViewController:(PUPaymentService *)paymentService __deprecated_msg("Use paymentServiceDidRequestPresentingPaymentMethodsViewController instead");
+
+/**
+ *  This method notifies about changes to payment method that are visible in payment method widget. It is invoked on
+ *  various events like: user selects payment method, widgets load previously selected payment method, user deletes 
+ *  selected payment method ,etc.
+ *
+ *  Use this method to enable/disable payment button in merchant application.
+ *
+ *  @param paymentMethod  Selected payment method or nil, if no method is selected.
+ */
+@optional
+- (void)paymentServiceDidSelectPaymentMethod:(PUPaymentMethodDescription *)paymentMethod;
 
 @end
 

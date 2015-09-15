@@ -15,7 +15,7 @@
 #import "PUAppDelegate.h"
 #import "PUMainViewController.h"
 
-@interface PUPaymentViewController () <UIAlertViewDelegate, PUPaymentMethodViewControllerDelegate, PUPaymentServiceDelegate>
+@interface PUPaymentViewController () <UIAlertViewDelegate, PUPaymentServiceDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *widgetView;
 @property (strong, nonatomic) IBOutlet UIButton *payButton;
@@ -143,6 +143,12 @@
 - (void)paymentServiceDidRequestPresentingViewController:(UIViewController *)viewController
 {
     [self.navigationController presentViewController:viewController animated:YES completion:nil];
+}
+
+- (void)paymentServiceDidSelectPaymentMethod:(PUPaymentMethodDescription *)paymentMethod
+{
+    BOOL hasPaymentMethod = paymentMethod != nil;
+    self.payButton.enabled = hasPaymentMethod;
 }
 
 #pragma mark - handle UIApplication openURL
