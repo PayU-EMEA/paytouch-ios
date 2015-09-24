@@ -60,6 +60,7 @@
 		32BFE88B19D04F6E00694861 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 32BFE88719D04F6E00694861 /* README.md */; };
 		32BFE88C19D04F6E00694861 /* UIView+Position.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BFE88919D04F6E00694861 /* UIView+Position.m */; };
 		32BFE89019D29BEA00694861 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 32BFE88F19D29BEA00694861 /* README.md */; };
+		522578F61BB428F600515B13 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522578F51BB428F600515B13 /* Launch Screen.storyboard */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,6 +172,7 @@
 		32BFE88819D04F6E00694861 /* UIView+Position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Position.h"; sourceTree = "<group>"; };
 		32BFE88919D04F6E00694861 /* UIView+Position.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Position.m"; sourceTree = "<group>"; };
 		32BFE88F19D29BEA00694861 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		522578F51BB428F600515B13 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +247,7 @@
 				32BFE7E919D0474200694861 /* Categories */,
 				32BFE7F319D0474200694861 /* Classes */,
 				32BFE80A19D0474200694861 /* iPhoneStoryboard.storyboard */,
+				522578F51BB428F600515B13 /* Launch Screen.storyboard */,
 				32BFE7BC19D043BF00694861 /* PayU-iOS-SDK-Sample-Application-Info.plist */,
 				32BFE7BD19D043BF00694861 /* InfoPlist.strings */,
 				32BFE7C019D043BF00694861 /* main.m */,
@@ -632,6 +635,7 @@
 				32BFE7CD19D043BF00694861 /* Images.xcassets in Resources */,
 				32BFE89019D29BEA00694861 /* README.md in Resources */,
 				32BFE7BF19D043BF00694861 /* InfoPlist.strings in Resources */,
+				522578F61BB428F600515B13 /* Launch Screen.storyboard in Resources */,
 				32BFE88A19D04F6E00694861 /* LICENSE in Resources */,
 				32BFE88B19D04F6E00694861 /* README.md in Resources */,
 				32BFE85019D04A0100694861 /* README.md in Resources */,
@@ -805,7 +809,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PayU-iOS-SDK-Sample-Application/PayU-iOS-SDK-Sample-Application-Prefix.pch";
 				IBSC_WARNINGS = NO;
@@ -824,7 +828,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PayU-iOS-SDK-Sample-Application/PayU-iOS-SDK-Sample-Application-Prefix.pch";
 				IBSC_WARNINGS = NO;

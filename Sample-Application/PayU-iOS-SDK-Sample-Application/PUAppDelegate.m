@@ -7,6 +7,7 @@
 //
 
 #import "PUAppDelegate.h"
+#import "PUSDK.h"
 #import "PUMainViewController.h"
 #import "PUPaymentViewController.h"
 #import "AFOAuth2Client.h"
@@ -17,6 +18,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    NSLog(@"PayU SDK: %@", [PUSDK libraryVersion]);
+    
     return YES;
 }
 
