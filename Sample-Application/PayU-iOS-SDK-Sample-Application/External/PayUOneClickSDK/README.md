@@ -13,7 +13,7 @@ To use SDK in you application you have to:
 - Add -all_load to Build Settings > Linking > Other Linker Flags.
 
 ##Requirements
-PayU SDK 1.4 and higher requires iOS 7.0 and above.
+PayU SDK 1.5 and higher requires iOS 7.0 and above.
 
 ##Contact
 [PayU iOS Team](mailto:payu-meat-ios@payu.pl)

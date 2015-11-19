@@ -60,7 +60,7 @@
 		32BFE88B19D04F6E00694861 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 32BFE88719D04F6E00694861 /* README.md */; };
 		32BFE88C19D04F6E00694861 /* UIView+Position.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BFE88919D04F6E00694861 /* UIView+Position.m */; };
 		32BFE89019D29BEA00694861 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 32BFE88F19D29BEA00694861 /* README.md */; };
-		522578F61BB428F600515B13 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522578F51BB428F600515B13 /* Launch Screen.storyboard */; settings = {ASSET_TAGS = (); }; };
+		522578F61BB428F600515B13 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522578F51BB428F600515B13 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -597,7 +597,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = SA;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = PayU;
 				TargetAttributes = {
 					32BFE7D119D043BF00694861 = {
@@ -751,6 +751,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -818,6 +819,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/PayU-iOS-SDK-Sample-Application/External/PayUOneClickSDK",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.payu.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -837,6 +839,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/PayU-iOS-SDK-Sample-Application/External/PayUOneClickSDK",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.payu.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -859,6 +862,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "PayU-iOS-SDK-Sample-ApplicationTests/PayU-iOS-SDK-Sample-ApplicationTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.payu.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -877,6 +881,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PayU-iOS-SDK-Sample-Application/PayU-iOS-SDK-Sample-Application-Prefix.pch";
 				INFOPLIST_FILE = "PayU-iOS-SDK-Sample-ApplicationTests/PayU-iOS-SDK-Sample-ApplicationTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.payu.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;

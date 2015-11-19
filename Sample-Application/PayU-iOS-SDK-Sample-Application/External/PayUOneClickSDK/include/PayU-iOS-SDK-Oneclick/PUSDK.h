@@ -7,7 +7,6 @@
 //
 
 #import "PUPaymentService.h"
-#import "PUPaymentMethodViewControllerDelegate.h"
 #import "PUPaymentRequest.h"
 #import "PUPaymentMethodDescription.h"
 #import "PUErrorCode.h"

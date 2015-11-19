@@ -11,8 +11,6 @@
 #import "PUPaymentRequest.h"
 #import "PUPaymentMethodDescription.h"
 #import "PUAuthorizationDataSource.h"
-#import "PUPaymentMethodViewControllerDelegate.h"
-
 
 typedef NS_ENUM(NSInteger, PUPaymentRequestStatus) {
     PUPaymentRequestStatusSuccess = 1,
@@ -26,6 +24,7 @@ typedef NS_ENUM(NSInteger, PUPresentationStyle) {
 };
 
 @class PUPaymentService;
+@protocol PUPaymentMethodViewControllerDelegate;
 
 @protocol PUPaymentServiceDelegate <NSObject>
 
@@ -43,17 +42,6 @@ typedef NS_ENUM(NSInteger, PUPresentationStyle) {
  *  @param viewController Payment methods view controller, authorization view controller etc.
  */
 - (void)paymentServiceDidRequestPresentingViewController:(UIViewController *)viewController;
-
-/**
- *  This method is invoked when Payment Service detect the need of presenting payment methods list to the user.
- *  When this call is received Payment Service should be used to retrieve Payment Methods View Controller.
- *  This view controller should be presented on screen.
- *
- *  @param paymentService Payment Service instance.
- *  @deprecated Use paymentServiceDidRequestPresentingPaymentMethodsViewController instead
- */
-
-- (void)paymentServiceDidRequestPresentingPaymentMethodViewController:(PUPaymentService *)paymentService __deprecated_msg("Use paymentServiceDidRequestPresentingPaymentMethodsViewController instead");
 
 /**
  *  This method notifies about changes to payment method that are visible in payment method widget. It is invoked on
@@ -164,20 +152,5 @@ typedef NS_ENUM(NSInteger, PUPresentationStyle) {
  *  @deprecated Use PaymentMethodWidget to present selected payment method instead
  */
 - (void)retrieveSelectedPaymentMethodWithCompletionHandler:(void (^)(PUPaymentMethodDescription *paymentMethod, NSError *error))completionHandler __deprecated_msg("Use PaymentMethodWidget to present selected payment method instead");
-
-/**----------------------------------------------------------------------
- *  @name Providing payment methods list UIViewController subclass
- * ----------------------------------------------------------------------
- */
-
-/**
- *  Method for providing UIViewController subclass containing payment methods list. Provided instance should be presented on the screen.
- *  @warning Given controller **can't** be pushed onto UIViewController stack.
- *
- *  @param delegate Delegate that will be informed about payment method selection.
- *  @return UIViewController subclass for showing payment methods list.
- *  @deprecated Use widget and implement paymentServiceDidRequestPresentingPaymentMethodsViewController instead.
- */
-- (UIViewController *)paymentMethodViewControllerWithDelegate:(id <PUPaymentMethodViewControllerDelegate>)delegate __deprecated_msg("Use widget and implement - paymentServiceDidRequestPresentingPaymentMethodsViewController instead");
 
 @end
