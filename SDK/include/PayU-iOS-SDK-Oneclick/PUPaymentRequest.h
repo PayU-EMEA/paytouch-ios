@@ -14,7 +14,7 @@
 @interface PUPaymentRequest : NSObject
 
 /**
- *  Payment identifier in merchant system 
+ *  Order identifier in merchant system
  */
 @property(nonatomic, copy) NSString *extOrderId;
 

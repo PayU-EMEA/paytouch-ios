@@ -85,35 +85,34 @@
     PUPaymentRequest *paymentRequest = [self preparePaymentRequest];
     @weakify(self);
     [self.paymentService submitPaymentRequest:paymentRequest
-                            completionHandler:^(PUPaymentRequestStatus status, NSError *error) {
+                            completionHandler:^(PUPaymentRequestResult *result) {
                                 @strongify(self);
-                                [self handleCompletion:status error:error];
+                                [self handleCompletionWithResult:result];
                             }];
 }
 
-- (void)handleCompletion:(PUPaymentRequestStatus)status error:(NSError *)error
+- (void)handleCompletionWithResult:(PUPaymentRequestResult *)result
 {
-    switch (status) {
+    switch (result.status) {
         case PUPaymentRequestStatusSuccess:
-            [UIAlertView showAlertWithMessage:NSLocalizedString(@"Płatność przyjęta do realizacji", nil)
-                                  buttonTitle:nil
-                                  andDelegate:self];
+            NSLog(@"Payment accepted: orderId=%@, extOrderId=%@", result.orderId, result.extOrderId);
+            
+            [UIAlertView showAlertWithDelegate:self
+                                       message:[NSString stringWithFormat:NSLocalizedString(@"Płatność przyjęta do realizacji. OrderId=%@, ExtOrderId=%@", nil),
+                                                result.orderId,
+                                                result.extOrderId]];
             [self setPayButtonEnabled:YES];
             break;
             
         case PUPaymentRequestStatusRetry:
-            NSLog(@"User whant to change payment method: %@", error);
+            NSLog(@"User wants to change payment method: %@", result.error);
             [self setPayButtonEnabled:YES];
             break;
             
         case PUPaymentRequestStatusFailure:
-            NSLog(@"Error submitting payment: %@", error);
-            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil
-                                                                message:NSLocalizedString(@"Płatność nieudana", nil)
-                                                               delegate:self
-                                                      cancelButtonTitle:NSLocalizedString(@"Zamknij", nil)
-                                                      otherButtonTitles:nil];
-            [alertView show];
+            NSLog(@"Error submitting payment: %@", result.error);
+            [UIAlertView showAlertWithDelegate:self
+                                       message:NSLocalizedString(@"Płatność nieudana", nil)];
             [self setPayButtonEnabled:YES];
             break;
     }

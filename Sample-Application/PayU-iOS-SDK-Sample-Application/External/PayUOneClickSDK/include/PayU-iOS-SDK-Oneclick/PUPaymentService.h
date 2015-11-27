@@ -11,17 +11,14 @@
 #import "PUPaymentRequest.h"
 #import "PUPaymentMethodDescription.h"
 #import "PUAuthorizationDataSource.h"
-
-typedef NS_ENUM(NSInteger, PUPaymentRequestStatus) {
-    PUPaymentRequestStatusSuccess = 1,
-    PUPaymentRequestStatusRetry,
-    PUPaymentRequestStatusFailure
-};
+#import "PUPaymentRequestResult.h"
 
 typedef NS_ENUM(NSInteger, PUPresentationStyle) {
     PUPresentationStyleInsideNavigationController = 1,
     PUPresentationStyleOutsideNavigationController
 };
+
+typedef void (^PUPaymentRequestCompletionHandler)(PUPaymentRequestResult *result);
 
 @class PUPaymentService;
 @protocol PUPaymentMethodViewControllerDelegate;
@@ -99,7 +96,7 @@ typedef NS_ENUM(NSInteger, PUPresentationStyle) {
  *  @param completionHandler            Code block that will be invoked when submitting is finished, or brake at some point with error.
  */
 - (void)submitPaymentRequest:(PUPaymentRequest *)paymentRequest
-           completionHandler:(void (^)(PUPaymentRequestStatus status, NSError *error))completionHandler;
+           completionHandler:(PUPaymentRequestCompletionHandler)completionHandler;
 
 /**----------------------------------------------------------------------
  *  @name Handling changing of user in merchant application
@@ -125,32 +122,5 @@ typedef NS_ENUM(NSInteger, PUPresentationStyle) {
  *  @param callback URL which application was asked to open.
  */
 - (BOOL)handleOpenURL:(NSURL *)callback;
-
-/**
- *  Method for submitting payment.
- *
- *  @param paymentRequest               PUPaymentRequest object containing transaction data.
- *  @param completionHandler            Code block that will be invoked when submitting is finished, or brake at some point with error.
- *  @param controllerPresentationBlock  Code block that will be invoked when it is necessary to display some additional view
- * controller to finish payment process, f.e. in order to provide additional authorization infomation (CVV, 3DS) or log in to bank system.
- * This code block provides UIViewController subclass that **must** be shown on the screen in order to properly finish payment process.
- *  @warning controllerPresentationBlock code block may be called several times.
- */
-- (void)submitPaymentRequest:(PUPaymentRequest *)paymentRequest
-           completionHandler:(void (^)(PUPaymentRequestStatus status, NSError *error))completionHandler
- controllerPresentationBlock:(void (^)(UIViewController *viewController, PUPresentationStyle presentationStyle))controllerPresentationBlock __deprecated_msg("Use - submitPaymentRequest: completionHandler: instead");
-
-/**----------------------------------------------------------------------
- *  @name Retrieving selected payment method
- * ----------------------------------------------------------------------
- */
-
-/**
- *  Method for retrieving selected payment method.
- *
- *  @param completionHandler Code block that will be invoked when retrieving is finished
- *  @deprecated Use PaymentMethodWidget to present selected payment method instead
- */
-- (void)retrieveSelectedPaymentMethodWithCompletionHandler:(void (^)(PUPaymentMethodDescription *paymentMethod, NSError *error))completionHandler __deprecated_msg("Use PaymentMethodWidget to present selected payment method instead");
 
 @end

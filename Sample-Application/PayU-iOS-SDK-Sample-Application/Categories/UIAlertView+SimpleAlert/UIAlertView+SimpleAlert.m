@@ -10,19 +10,17 @@
 
 @implementation UIAlertView (SimpleAlert)
 
-+ (void)showAlertWithMessage:(NSString *)message
-                 buttonTitle:(NSString *)buttonTitle
-                 andDelegate:(id)delegate
-{
++ (void)showAlertWithDelegate:(id)delegate message:(NSString *)messageFormat, ... {
+    va_list args;
+    va_start(args, messageFormat);
+    NSString *message = [[NSString alloc] initWithFormat:messageFormat arguments:args];
+    va_end(args);
+    
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil
                                                         message:message
                                                        delegate:delegate
                                               cancelButtonTitle:NSLocalizedString(@"Zamknij", nil)
                                               otherButtonTitles:nil];
-    if (buttonTitle) {
-        [alertView addButtonWithTitle:buttonTitle];
-    }
-    
     [alertView show];
 }
 

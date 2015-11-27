@@ -10,8 +10,6 @@
 
 @interface UIAlertView (SimpleAlert)
 
-+ (void)showAlertWithMessage:(NSString *)message
-                 buttonTitle:(NSString *)buttonTitle
-                 andDelegate:(id)delegate;
++ (void)showAlertWithDelegate:(id)delegate message:(NSString *)messageFormat, ...;
 
 @end

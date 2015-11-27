@@ -74,11 +74,7 @@
 		
 		<option value="//api/name/paymentMethodWidgetWithFrame:">- paymentMethodWidgetWithFrame:</option>
 		
-		<option value="//api/name/retrieveSelectedPaymentMethodWithCompletionHandler:">- retrieveSelectedPaymentMethodWithCompletionHandler:</option>
-		
 		<option value="//api/name/submitPaymentRequest:completionHandler:">- submitPaymentRequest:completionHandler:</option>
-		
-		<option value="//api/name/submitPaymentRequest:completionHandler:controllerPresentationBlock:">- submitPaymentRequest:completionHandler:controllerPresentationBlock:</option>
 		
 	</optgroup>
 	
@@ -304,7 +300,7 @@ When user interacts with the widget the Payment Service will inform its <a href=
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)submitPaymentRequest:(PUPaymentRequest *)<em>paymentRequest</em> completionHandler:(void ( ^ ) ( PUPaymentRequestStatus status , NSError *error ))<em>completionHandler</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)submitPaymentRequest:(PUPaymentRequest *)<em>paymentRequest</em> completionHandler:(PUPaymentRequestCompletionHandler)<em>completionHandler</em></code></div>
 
 		    
 			
@@ -462,137 +458,6 @@ Should be called in UIApplicationDelegate in method - (BOOL)application:(UIAppli
 			
 		</div>
 	</div>
-</div><div class="section-method">
-	<a name="//api/name/submitPaymentRequest:completionHandler:controllerPresentationBlock:" title="submitPaymentRequest:completionHandler:controllerPresentationBlock:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/submitPaymentRequest:completionHandler:controllerPresentationBlock:">&ndash;&nbsp;submitPaymentRequest:completionHandler:controllerPresentationBlock:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Method for submitting payment.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)submitPaymentRequest:(PUPaymentRequest *)<em>paymentRequest</em> completionHandler:(void ( ^ ) ( PUPaymentRequestStatus status , NSError *error ))<em>completionHandler</em> controllerPresentationBlock:(void ( ^ ) ( UIViewController *viewController , PUPresentationStyle presentationStyle ))<em>controllerPresentationBlock</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>paymentRequest</code></th>
-						<td><p><a href="../Classes/PUPaymentRequest.html">PUPaymentRequest</a> object containing transaction data.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>completionHandler</code></th>
-						<td><p>Code block that will be invoked when submitting is finished, or brake at some point with error.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>controllerPresentationBlock</code></th>
-						<td><p>Code block that will be invoked when it is necessary to display some additional view
-controller to finish payment process, f.e. in order to provide additional authorization infomation (CVV, 3DS) or log in to bank system.
-This code block provides UIViewController subclass that <strong>must</strong> be shown on the screen in order to properly finish payment process.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<div class="warning"><p><strong>Warning:</strong> controllerPresentationBlock code block may be called several times.</p></div>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PUPaymentService.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div>
-						</div>
-						
-
-						<a title="Retrieving selected payment method" name="task_Retrieving selected payment method"></a>
-						<h2 class="task-title">Retrieving selected payment method</h2>
-
-						<div class="task-list">
-							<div class="section-method">
-	<a name="//api/name/retrieveSelectedPaymentMethodWithCompletionHandler:" title="retrieveSelectedPaymentMethodWithCompletionHandler:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/retrieveSelectedPaymentMethodWithCompletionHandler:">&ndash;&nbsp;retrieveSelectedPaymentMethodWithCompletionHandler:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Method for retrieving selected payment method. (<b class="deprecated">Deprecated:</b><span class="deprecated"> Use PaymentMethodWidget to present selected payment method instead</span>)</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)retrieveSelectedPaymentMethodWithCompletionHandler:(void ( ^ ) ( PUPaymentMethodDescription *paymentMethod , NSError *error ))<em>completionHandler</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>completionHandler</code></th>
-						<td><p>Code block that will be invoked when retrieving is finished</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PUPaymentService.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
 </div>
 						</div>
 						
@@ -608,7 +473,7 @@ This code block provides UIViewController subclass that <strong>must</strong> be
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2015 PayU. All rights reserved. Updated: 2015-11-19</p>
+						<p class="copyright">Copyright &copy; 2015 PayU. All rights reserved. Updated: 2015-11-27</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
