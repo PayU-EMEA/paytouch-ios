@@ -34,9 +34,9 @@
  */
 
 /**
- * Method for providing SDK with registered application callback scheme. This information is needed in payment authorization with use of i.e. bank applications installed on device and with PayU application.
+ * Method for providing SDK with registered application callback scheme. This information is needed in payment authorization with use of i.e. bank applications installed on device.
  *
- *  Method gets called when user selects PayU application as payment method or it is possible to authorize payment using bank application. Returned scheme must be registered in application info plist and be valid URL scheme.
+ *  Method gets called when it is possible to authorize payment using bank application. Returned scheme must be registered in application info plist and be valid URL scheme.
  */
 /*  Info plist entry example:
  	<key>CFBundleURLTypes</key>
