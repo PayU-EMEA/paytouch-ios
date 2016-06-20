@@ -62,7 +62,7 @@
 		522578F61BB428F600515B13 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522578F51BB428F600515B13 /* Launch Screen.storyboard */; };
 		52C2CE2C1C7B0BE700B5B98E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C2CE2B1C7B0BE700B5B98E /* SystemConfiguration.framework */; };
 		52C2CE2E1C7B0BED00B5B98E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C2CE2D1C7B0BED00B5B98E /* MobileCoreServices.framework */; };
-		604873441CA29D2F0080DA12 /* libPayU-iOS-SDK-Oneclick_Release.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 604873431CA29D2F0080DA12 /* libPayU-iOS-SDK-Oneclick_Release.a */; };
+		60199DB41D17DD3F00FC0D74 /* libPayU-iOS-SDK-Oneclick_Release.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60199DB31D17DD3F00FC0D74 /* libPayU-iOS-SDK-Oneclick_Release.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -177,7 +177,7 @@
 		52C2CE2B1C7B0BE700B5B98E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		52C2CE2D1C7B0BED00B5B98E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		52C2CE2F1C7B106900B5B98E /* libPayU-iOS-SDK-Oneclick_Debug.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPayU-iOS-SDK-Oneclick_Debug.a"; path = "PayU-iOS-SDK-Sample-Application/External/PayUOneClickSDK/libPayU-iOS-SDK-Oneclick_Debug.a"; sourceTree = "<group>"; };
-		604873431CA29D2F0080DA12 /* libPayU-iOS-SDK-Oneclick_Release.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPayU-iOS-SDK-Oneclick_Release.a"; path = "../SDK/libPayU-iOS-SDK-Oneclick_Release.a"; sourceTree = "<group>"; };
+		60199DB31D17DD3F00FC0D74 /* libPayU-iOS-SDK-Oneclick_Release.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPayU-iOS-SDK-Oneclick_Release.a"; path = "PayU-iOS-SDK-Sample-Application/External/PayUOneClickSDK/libPayU-iOS-SDK-Oneclick_Release.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,7 +185,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				604873441CA29D2F0080DA12 /* libPayU-iOS-SDK-Oneclick_Release.a in Frameworks */,
+				60199DB41D17DD3F00FC0D74 /* libPayU-iOS-SDK-Oneclick_Release.a in Frameworks */,
 				52C2CE2E1C7B0BED00B5B98E /* MobileCoreServices.framework in Frameworks */,
 				52C2CE2C1C7B0BE700B5B98E /* SystemConfiguration.framework in Frameworks */,
 				32BFE7B719D043BF00694861 /* CoreGraphics.framework in Frameworks */,
@@ -230,7 +230,7 @@
 		32BFE7B319D043BF00694861 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				604873431CA29D2F0080DA12 /* libPayU-iOS-SDK-Oneclick_Release.a */,
+				60199DB31D17DD3F00FC0D74 /* libPayU-iOS-SDK-Oneclick_Release.a */,
 				52C2CE2F1C7B106900B5B98E /* libPayU-iOS-SDK-Oneclick_Debug.a */,
 				52C2CE2D1C7B0BED00B5B98E /* MobileCoreServices.framework */,
 				52C2CE2B1C7B0BE700B5B98E /* SystemConfiguration.framework */,
