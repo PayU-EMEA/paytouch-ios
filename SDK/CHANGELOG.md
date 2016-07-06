@@ -9,6 +9,10 @@ Released on 20.06.2016.
 
 - German market support.
 
+### Fixed
+
+- 'Payment Error' popup shown in cases of PBL: 'dawny BPN Paribas Bank Polski'/'Płacę z Getin Bank'/'Płacę z Noble Bank'.
+
 ## 1.6.3
 Released on 23.03.2016.
 
