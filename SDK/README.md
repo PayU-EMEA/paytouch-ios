@@ -3,10 +3,8 @@
 PayU SDK is a library that introduces secure & fast PayU payments to any iOS application at minimum integration cost.
 
 ## How To Get Started
-Package contains two versions of library:
-
-- libPayU-iOS-SDK-Oneclick_Debug.a to use for development and distribution
-- libPayU-iOS-SDK-Oneclick_Release.a to use for appstore release. 
+Package contains release version of library to use for appstore release:
+- libPayU-iOS-SDK-Oneclick_Release.a
 
 The release version is built with more restricted security profile, which makes it impossible to debug application or distribute in other channels than App Store.
 
