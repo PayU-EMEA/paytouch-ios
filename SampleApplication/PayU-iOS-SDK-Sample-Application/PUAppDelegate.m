@@ -10,8 +10,7 @@
 #import "PUSDK.h"
 #import "PUMainViewController.h"
 #import "PUPaymentViewController.h"
-#import "AFOAuth2Client.h"
-#import "AFJSONRequestOperation.h"
+#import "AFOAuth2Manager.h"
 #import "AFNetworking.h"
 
 @implementation PUAppDelegate

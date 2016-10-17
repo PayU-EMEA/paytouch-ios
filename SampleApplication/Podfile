@@ -1,0 +1,19 @@
+platform :ios, '8.0'
+
+target 'PayU-iOS-SDK-Sample-Application' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for PayU-iOS-SDK-Sample-Application
+     pod 'AFNetworking', '~> 3.1'
+     pod 'AFOAuth2Manager', '~> 3.0'
+     pod 'UIViewPlusPosition'
+     pod 'libextobjc'
+     pod 'UIAlertView+Blocks'
+     
+  target 'PayU-iOS-SDK-Sample-ApplicationTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

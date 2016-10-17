@@ -1,0 +1,10 @@
+.DS_Store
+*.swp
+*.xccheckout
+*.gcno
+*.gcda
+xcuserdata/
+project.xcworkspace/
+Pods
+build
+.idea/
