@@ -3,7 +3,7 @@
 PayU iOS SDK adheres to [Semantic Versioning](http://semver.org/).
 
 ## 1.8.0
-Released on 19.09.2016.
+Released on 17.10.2016.
 
 ### Changes
 - Added support for iOS 10.
