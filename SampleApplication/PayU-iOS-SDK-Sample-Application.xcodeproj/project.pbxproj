@@ -35,7 +35,7 @@
 		52C2CE2E1C7B0BED00B5B98E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C2CE2D1C7B0BED00B5B98E /* MobileCoreServices.framework */; };
 		65B0D550D418E1CA059666D4 /* libPods-PayU-iOS-SDK-Sample-Application.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 846427756B04FFC1FD4F977C /* libPods-PayU-iOS-SDK-Sample-Application.a */; };
 		7C7CE3C6DD8FBC9942ECE7E9 /* libPods-PayU-iOS-SDK-Sample-ApplicationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24498C23ABCA3420460179CF /* libPods-PayU-iOS-SDK-Sample-ApplicationTests.a */; };
-		F15B0B971DB513E1000DD1D0 /* libPayU-iOS-SDK-Oneclick_Release.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F15B0B961DB513E1000DD1D0 /* libPayU-iOS-SDK-Oneclick_Release.a */; };
+		F15B0BA11DB51993000DD1D0 /* libPayU-iOS-SDK-Oneclick_Release.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F15B0BA01DB51993000DD1D0 /* libPayU-iOS-SDK-Oneclick_Release.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,7 +100,7 @@
 		8505475ADC9DADDCF09F7199 /* Pods-PayU-iOS-SDK-Sample-ApplicationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayU-iOS-SDK-Sample-ApplicationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PayU-iOS-SDK-Sample-ApplicationTests/Pods-PayU-iOS-SDK-Sample-ApplicationTests.release.xcconfig"; sourceTree = "<group>"; };
 		8FE9E6B6FC3635AB039F563B /* Pods-PayU-iOS-SDK-Sample-Application.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayU-iOS-SDK-Sample-Application.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PayU-iOS-SDK-Sample-Application/Pods-PayU-iOS-SDK-Sample-Application.debug.xcconfig"; sourceTree = "<group>"; };
 		C7A35E46AE4644A808188F2E /* Pods-PayU-iOS-SDK-Sample-ApplicationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayU-iOS-SDK-Sample-ApplicationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PayU-iOS-SDK-Sample-ApplicationTests/Pods-PayU-iOS-SDK-Sample-ApplicationTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F15B0B961DB513E1000DD1D0 /* libPayU-iOS-SDK-Oneclick_Release.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libPayU-iOS-SDK-Oneclick_Release.a"; sourceTree = "<group>"; };
+		F15B0BA01DB51993000DD1D0 /* libPayU-iOS-SDK-Oneclick_Release.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libPayU-iOS-SDK-Oneclick_Release.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +113,7 @@
 				32BFE7B719D043BF00694861 /* CoreGraphics.framework in Frameworks */,
 				32BFE7B919D043BF00694861 /* UIKit.framework in Frameworks */,
 				32BFE7B519D043BF00694861 /* Foundation.framework in Frameworks */,
-				F15B0B971DB513E1000DD1D0 /* libPayU-iOS-SDK-Oneclick_Release.a in Frameworks */,
+				F15B0BA11DB51993000DD1D0 /* libPayU-iOS-SDK-Oneclick_Release.a in Frameworks */,
 				65B0D550D418E1CA059666D4 /* libPods-PayU-iOS-SDK-Sample-Application.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,7 +337,7 @@
 			isa = PBXGroup;
 			children = (
 				32BFE85219D04A6B00694861 /* include */,
-				F15B0B961DB513E1000DD1D0 /* libPayU-iOS-SDK-Oneclick_Release.a */,
+				F15B0BA01DB51993000DD1D0 /* libPayU-iOS-SDK-Oneclick_Release.a */,
 				32BFE85D19D04A6B00694861 /* PayUOneClickSDK.bundle */,
 			);
 			name = PayUOneClickSDK;

@@ -2,8 +2,22 @@
 
 PayU iOS SDK adheres to [Semantic Versioning](http://semver.org/).
 
+
+## 1.8.2
+Released on 20.01.2017.
+
+### Changes
+- Bug fixes concerning UIWebView
+
+## 1.8.1
+Released on 05.12.2016.
+
+### Changes
+- UX improved for credit card adding panel.
+
+
 ## 1.8.0
-Released on 19.09.2016.
+Released on 17.10.2016.
 
 ### Changes
 - Added support for iOS 10.
