@@ -12,12 +12,14 @@
 #import "PUPaymentRequest.h"
 #import "PUPaymentRequestResult.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 typedef NS_ENUM(NSInteger, PUPresentationStyle) {
     PUPresentationStyleInsideNavigationController = 1,
     PUPresentationStyleOutsideNavigationController
 };
 
-typedef void (^PUPaymentRequestCompletionHandler)(PUPaymentRequestResult *result);
+typedef void (^PUPaymentRequestCompletionHandler)(PUPaymentRequestResult  *result);
 
 @class PUPaymentService;
 
@@ -48,7 +50,7 @@ typedef void (^PUPaymentRequestCompletionHandler)(PUPaymentRequestResult *result
  *  @param paymentMethod  Selected payment method or nil, if no method is selected.
  */
 @optional
-- (void)paymentServiceDidSelectPaymentMethod:(PUPaymentMethodDescription *)paymentMethod;
+- (void)paymentServiceDidSelectPaymentMethod:(nullable PUPaymentMethodDescription *)paymentMethod;
 
 @end
 
@@ -60,12 +62,12 @@ typedef void (^PUPaymentRequestCompletionHandler)(PUPaymentRequestResult *result
 /**
  *  Authorization data source
  */
-@property(nonatomic, weak) id <PUAuthorizationDataSource> dataSource;
+@property(nonatomic, weak, nullable) id <PUAuthorizationDataSource> dataSource;
 
 /**
  *  PUPaymentService delegate
  */
-@property(nonatomic, weak) id <PUPaymentServiceDelegate> delegate;
+@property(nonatomic, weak, nullable) id <PUPaymentServiceDelegate> delegate;
 
 /**----------------------------------------------------------------------
  *  @name Showing selected payment method
@@ -93,6 +95,7 @@ typedef void (^PUPaymentRequestCompletionHandler)(PUPaymentRequestResult *result
  *  @param paymentRequest               PUPaymentRequest object containing transaction data.
  *  @param completionHandler            Code block that will be invoked when submitting is finished, or brake at some point with error.
  */
+
 - (void)submitPaymentRequest:(PUPaymentRequest *)paymentRequest
            completionHandler:(PUPaymentRequestCompletionHandler)completionHandler;
 
@@ -122,3 +125,5 @@ typedef void (^PUPaymentRequestCompletionHandler)(PUPaymentRequestResult *result
 - (BOOL)handleOpenURL:(NSURL *)callback;
 
 @end
+
+NS_ASSUME_NONNULL_END

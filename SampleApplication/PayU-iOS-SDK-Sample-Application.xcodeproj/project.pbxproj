@@ -93,6 +93,12 @@
 		32BFE85A19D04A6B00694861 /* PUPaymentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PUPaymentService.h; sourceTree = "<group>"; };
 		32BFE85B19D04A6B00694861 /* PUSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PUSDK.h; sourceTree = "<group>"; };
 		32BFE85D19D04A6B00694861 /* PayUOneClickSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PayUOneClickSDK.bundle; sourceTree = "<group>"; };
+		520E62C81EF3D010003D907C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		520E62C91EF3D010003D907C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		520E62CA1EF3D017003D907C /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		520E62CB1EF3D017003D907C /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		520E62CC1EF3D01B003D907C /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		520E62CD1EF3D01C003D907C /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		522578F51BB428F600515B13 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		52C2CE2B1C7B0BE700B5B98E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		52C2CE2D1C7B0BED00B5B98E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -451,6 +457,9 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
+				pl,
+				cs,
 			);
 			mainGroup = 32BFE7A819D043BF00694861;
 			productRefGroup = 32BFE7B219D043BF00694861 /* Products */;
@@ -621,6 +630,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				32BFE7BE19D043BF00694861 /* en */,
+				520E62C81EF3D010003D907C /* de */,
+				520E62CA1EF3D017003D907C /* pl */,
+				520E62CC1EF3D01B003D907C /* cs */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -629,6 +641,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				32BFE7DD19D043BF00694861 /* en */,
+				520E62C91EF3D010003D907C /* de */,
+				520E62CB1EF3D017003D907C /* pl */,
+				520E62CD1EF3D01C003D907C /* cs */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -640,6 +655,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -685,6 +701,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;

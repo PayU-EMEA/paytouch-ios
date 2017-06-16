@@ -2,6 +2,12 @@
 
 PayU iOS SDK adheres to [Semantic Versioning](http://semver.org/).
 
+## 1.9.0
+Released on 16.06.2017.
+
+### Changes
+- Added proper nullability and type annotations in order to improve Swift compatibility.
+- Added ability to use Sandbox endpoint in place of Production endpoint.
 
 ## 1.8.2
 Released on 20.01.2017.

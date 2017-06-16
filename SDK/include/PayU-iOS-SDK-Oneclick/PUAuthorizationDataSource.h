@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  *  PUAuthorizationDataSource protocol manages refreshing of merchant access token.
  */
@@ -26,7 +28,7 @@
  *  @param completionHandler Block of code that **must** be invoked after success or failure when trying to refresh the token.
  *  @warning method may be called several times
  */
-- (void)refreshTokenWithCompletionHandler:(void (^)(NSString *accessToken, NSError *error))completionHandler;
+- (void)refreshTokenWithCompletionHandler:(void (^)(NSString * __nullable accessToken, NSError * __nullable error))completionHandler;
 
 /**----------------------------------------------------------------------
  *  @name Application callback scheme provider
@@ -54,3 +56,5 @@
 - (NSString *)applicationCallbackScheme;
 
 @end
+
+NS_ASSUME_NONNULL_END

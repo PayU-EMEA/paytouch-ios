@@ -11,8 +11,12 @@
 #import "PUPaymentMethodDescription.h"
 #import "PUErrorCode.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface PUSDK : NSObject
 
 + (NSString *)libraryVersion;
 
 @end
+
+NS_ASSUME_NONNULL_END
