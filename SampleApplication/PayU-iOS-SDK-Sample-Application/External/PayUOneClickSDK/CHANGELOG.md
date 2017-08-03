@@ -2,6 +2,13 @@
 
 PayU iOS SDK adheres to [Semantic Versioning](http://semver.org/).
 
+## 2.0.0
+Released on 02.08.2017.
+
+### Changes
+- Added payment information to the widget.
+(please increase view, that contains the widget, height from 50 points to 85 points)
+
 ## 1.9.0
 Released on 16.06.2017.
 
