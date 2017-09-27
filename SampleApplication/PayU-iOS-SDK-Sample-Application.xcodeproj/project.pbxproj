@@ -33,9 +33,9 @@
 		522578F61BB428F600515B13 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522578F51BB428F600515B13 /* Launch Screen.storyboard */; };
 		52C2CE2C1C7B0BE700B5B98E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C2CE2B1C7B0BE700B5B98E /* SystemConfiguration.framework */; };
 		52C2CE2E1C7B0BED00B5B98E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C2CE2D1C7B0BED00B5B98E /* MobileCoreServices.framework */; };
-		6008F3C71F31D2550027B58E /* libPayU-iOS-SDK-Oneclick_Release.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F15B0BA01DB51993000DD1D0 /* libPayU-iOS-SDK-Oneclick_Release.a */; };
 		65B0D550D418E1CA059666D4 /* libPods-PayU-iOS-SDK-Sample-Application.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 846427756B04FFC1FD4F977C /* libPods-PayU-iOS-SDK-Sample-Application.a */; };
 		7C7CE3C6DD8FBC9942ECE7E9 /* libPods-PayU-iOS-SDK-Sample-ApplicationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24498C23ABCA3420460179CF /* libPods-PayU-iOS-SDK-Sample-ApplicationTests.a */; };
+		F15B0BA11DB51993000DD1D0 /* libPayU-iOS-SDK-Oneclick_Release.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F15B0BA01DB51993000DD1D0 /* libPayU-iOS-SDK-Oneclick_Release.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,12 +114,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6008F3C71F31D2550027B58E /* libPayU-iOS-SDK-Oneclick_Release.a in Frameworks */,
 				52C2CE2E1C7B0BED00B5B98E /* MobileCoreServices.framework in Frameworks */,
 				52C2CE2C1C7B0BE700B5B98E /* SystemConfiguration.framework in Frameworks */,
 				32BFE7B719D043BF00694861 /* CoreGraphics.framework in Frameworks */,
 				32BFE7B919D043BF00694861 /* UIKit.framework in Frameworks */,
 				32BFE7B519D043BF00694861 /* Foundation.framework in Frameworks */,
+				F15B0BA11DB51993000DD1D0 /* libPayU-iOS-SDK-Oneclick_Release.a in Frameworks */,
 				65B0D550D418E1CA059666D4 /* libPods-PayU-iOS-SDK-Sample-Application.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
