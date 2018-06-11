@@ -2,6 +2,25 @@
 
 PayU iOS SDK adheres to [Semantic Versioning](http://semver.org/).
 
+## 2.2.0
+Release prepared on 08.06.2018
+
+### Changes
+- Updated API endpoints and endpoint certificates
+- Updated some Czech language transalations
+
+## 2.1.2
+Released on 07.02.2017.
+
+### Changes
+- removed symbol obfuscation in order to comply with Apple App Store rules
+
+## 2.1.1
+Released on 23.10.217
+
+### Changes
+- Removed local minimal order amount validation. Amount has to be greater than zero. Note: your account might have some minimal set on the backend.
+
 ## 2.1.0
 Released on 27.09.2017.
 
