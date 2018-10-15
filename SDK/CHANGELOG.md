@@ -2,6 +2,12 @@
 
 PayU iOS SDK adheres to [Semantic Versioning](http://semver.org/).
 
+## 2.2.1
+Release prepared on 08.10.2018
+
+### Changes
+- Fixed rounding issue that occured when payment amount like 39,99000000001024 got rounded to 40,00. Not partial cents (grosz) are rounded to nearest full cent (grosz).
+
 ## 2.2.0
 Release prepared on 08.06.2018
 
