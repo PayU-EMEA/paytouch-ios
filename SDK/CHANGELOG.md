@@ -2,6 +2,18 @@
 
 PayU iOS SDK adheres to [Semantic Versioning](http://semver.org/).
 
+## 2.2.3
+Release prepared on 06.03.2018
+
+### Changes
+- updates card number validation patterns
+
+## 2.2.2
+Release prepared on 22.10.2018
+
+### Changes
+- Internal changes.
+
 ## 2.2.1
 Release prepared on 08.10.2018
 
